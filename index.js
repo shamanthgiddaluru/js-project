@@ -1,4 +1,3 @@
-// index.js
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const findEvenNumbers = (arr) => arr.filter(num => num % 2 === 0);
@@ -10,6 +9,10 @@ const printPattern = (rows) => {
     }
 };
 
-console.log("Even Numbers:", findEvenNumbers(numbers));
-console.log("Odd Numbers:", findOddNumbers(numbers));
-printPattern(5);
+const main = () => {
+    console.log("Even Numbers:", findEvenNumbers(numbers));
+    console.log("Odd Numbers:", findOddNumbers(numbers));
+    printPattern(5);
+};
+
+main();
